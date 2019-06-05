@@ -4,29 +4,21 @@
  * and open the template in the editor.
  */
 package javaapplication1;
-import java.util.Scanner;
+
 
 public class JavaApplication1 {
 
     
     public static void main(String[] args) {
-double acumulador=0;
-double sueldo;
-Scanner lector=new Scanner(System.in);
-
-for(int i=1;i<=12;i++)
-{
-System.out.println("sueldo");
-
-sueldo=lector.nextInt();
-
-acumulador=acumulador+sueldo;
-
-
-}
-
-System.out.println ("la suma:"+ acumulador);
+        int x=20; //en switch solo se trabaja con byte,short,int,char,string
         
+        switch(x){
+            case 4:System.out.println("4");
+            default:System.out.println("default");
+            case 8: System.out.println("8");
+            
+            case 10: System.out.println("10");
+        }
+    }
     
-}
 }
